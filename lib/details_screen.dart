@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_explore/Amenties.dart';
 
 class DetailsScreen extends StatelessWidget {
   DetailsScreen({super.key});
@@ -15,6 +14,7 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -242,7 +242,7 @@ class DetailsScreen extends StatelessWidget {
                     ),
                     Spacer(),
                     Container(
-                      width: 200,
+                      width: size.width * 0.4,
                       height: 50,
                       decoration: BoxDecoration(
                           border: Border.all(color: Colors.teal),
@@ -264,7 +264,7 @@ class DetailsScreen extends StatelessWidget {
                   height: 10,
                 ),
                 Container(
-                  width: 400,
+                  width: size.width * 0.9,
                   height: 50,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
@@ -304,7 +304,6 @@ class DetailsScreen extends StatelessWidget {
                 //     },
                 //   ),
                 // ),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -402,7 +401,7 @@ class DetailsScreen extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
-                  width: 400,
+                  width: size.width,
                   height: 150,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.teal),
@@ -429,12 +428,11 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 SizedBox(
                   height: 10,
                 ),
                 Container(
-                  width: 400,
+                  width: size.width,
                   height: 150,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.teal),
@@ -461,12 +459,11 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 SizedBox(
                   height: 10,
                 ),
                 Container(
-                  width: 400,
+                  width: size.width,
                   height: 150,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.teal),
@@ -492,14 +489,13 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 SizedBox(
                   height: 20,
                 ),
                 Text(
                   "Others",
                   style: TextStyle(
-                      fontFamily: 'Regular', fontWeight: FontWeight.w100),
+                      fontFamily: 'Regular', fontWeight: FontWeight.w200),
                 ),
                 Text(
                   " * The property does not to permit food from outside",

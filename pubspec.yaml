@@ -76,7 +76,7 @@ flutter:
   fonts:
     - family: Regular
       fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/Fonts/Poppins-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
